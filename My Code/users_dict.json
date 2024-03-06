@@ -1,0 +1,20 @@
+{
+  "adeon": {
+    "colour": "red",
+    "species": "fox"
+  },
+  "maple": {
+    "species": "rabbit"
+  },
+  "meeka": {
+    "species": "mouse"
+  },
+  "opcode": {
+    "colour": "brown",
+    "species": "raccoon"
+  },
+  "tachi": {
+    "species": "weasel",
+    "colour": "yellow"
+  }
+}
