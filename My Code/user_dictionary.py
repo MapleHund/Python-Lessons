@@ -9,6 +9,9 @@ infoTemplate = {"species":"",
 #    userInfo = 
 # meaningless text to change file
 # more meaningless text
+#
+#
+#
 
 def add_user_info(user):
     userInfo = infoTemplate
