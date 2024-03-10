@@ -64,9 +64,8 @@ def print_user_info(user, userInfo):
     print(f"Info for {user}:")
     # print each key value pair in userInfo
     # this shit won't work though. Why?
-    for i in userInfo[user].keys():
-        #print(f'{}: {}')
-        print()
+    for k,v in userInfo[user].items():
+        print(f'{k}: {v}')
     return
 
 def save_user_list(user, userInfo):
