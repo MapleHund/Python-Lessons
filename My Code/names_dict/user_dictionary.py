@@ -9,11 +9,8 @@ import json
 
 path = Path('users_dict.json')
 # Template for user info
-# This tuple gets modified by add_new_user(). Why?
-# perhaps replace with a tuple just listing the keys?
-# infoTemplate = ("species", "colour")
-infoTemplate = ({"species":"",
-                "colour":""})
+INFOTEMPLATE = {"species":"",
+                "colour":""}
 userList = {}
 
 def update_existing_user(user, userInfo):
@@ -40,12 +37,9 @@ def update_existing_user(user, userInfo):
 
 def add_new_user(user, userInfo):
     # Get info for new user
-    # load template for info
-    
-    # Pointer issue!
-    # This causes any changes to userInfo to change the infoTemplate
-    userInfo[user] = infoTemplate
-    # Iterate over info items and enter values
+    # Load template for info
+    userInfo[user] = INFOTEMPLATE.copy()
+    # Loop through info items and enter values
     for info in userInfo[user]:
         print(f"What is this person's {info}? (\"skip\" to skip)")
         newInfo = input()
